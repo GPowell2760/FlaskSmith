@@ -1,0 +1,70 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Design Tokens */
+:root {
+  /* Colors */
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-accent: #ff5722;
+  --color-background: #f9f9f9;
+  --color-text: #333;
+  --color-text-light: #fff;
+
+  /* Fonts */
+  --font-base: "Arial", sans-serif;
+  --font-heading: "Georgia", serif;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}
+
+/* Basic Global Styles */
+body {
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+  columns: inherit;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility Classes */
+.container {
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
